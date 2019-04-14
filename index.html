@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cryptocurrency Ticker Site</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Cryptocurrency Ticker</h1>
+      <p class="lead">Find the current price of your cryptocurrency in just one click! </p>
+      <form class="form-inline" action="/" method="post">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" name="amount" placeholder="Enter Amount" />
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <select class="form-control" name="crypto" required>
+            <option value="BTC">Bitcoin</option>
+            <option value="ETH">Etherium</option>
+            <option value="LTC">Litecoin</option>
+          </select>
+        </div>
+        <div class="form-group mx-sm-3 mb-2"> price in </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <select class="form-control" name="fiat" required>
+            <option value="USD">US Dollars</option>
+            <option value="GBP">Great Britain Pound</option>
+            <option value="EUR">Euro</option>
+          </select>
+        </div>
+        <button class="btn calculate-btn btn-secondary mb-2" type="submit" name="button">Check Here</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
